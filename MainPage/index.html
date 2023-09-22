@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="../Imgs/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,500&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,500&family=Dancing+Script:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../slick-1.8.1/slick/slick-theme.css">
+
+    <title>The Good Food blog</title>
+</head>
+<body>
+    <div class="main-title_box">
+        <div class="open">
+            <span class="header-burgerAfter"></span>
+            <span class="header-burger"></span>
+            <span class="header-burgerBefore"></span>
+        </div>
+        <img class="logo-img" src="../Imgs/logo.png">
+        <div class="main-text-block justify-me">
+            <h1 class="main-title">The Good Food blog</h1>
+            <p class="main-title_p">Найди и приготовь любой рецепт по вашему вкусу</p>
+        </div>
+
+        <i class="fa-solid fa-magnifying-glass lupa-icon"></i>
+
+        <div class="mobile-menu">
+            <div class="mn-title-box">
+                <h1 class="main-title-mn">The Good Food blog</h1>
+                <i class="fa-solid fa-magnifying-glass lupa-icon-mn"></i>
+            </div>
+            <ul class="nav-list-mn">
+                <li class="nav-link-mn">Рецепты</li>
+                <li class="nav-link-mn">Подборки Рецептов</li>
+                <a href="../ContactsPage/contacts.html" class="nav-link-mn__td"><li class="nav-link-mn">Контакты</li></a>
+                <a class="header-filter-mn" href="#"><li class="header-span-mn">Подбор по ингредиентам</li></a>
+            </ul>
+
+            <!-- <div class="mobile-menu__decoration"><img class="mn-line" src="../Imgs/line.png"></div> -->
+
+            <div class="mobile-menu-bottom">
+                <img class="logo-img-mn" src="../Imgs/logo.png">
+                <h2 class="mobile-menu-services">Социальные Сети:</h2>
+                <ul class="icons-list-mn">
+                    <li class="list-icon-mn">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </li>
+                    <li class="list-icon-mn">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </li>
+                    <li class="list-icon-mn">
+                        <i class="fa-brands fa-square-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <header class="header">
+        <div class="header-body">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-link">Рецепты</li>
+                <li class="nav-link">Подборки Рецептов</li>
+                <a href="../ContactsPage/contacts.html"><li class="nav-link">Контакты</li></a>
+                <a class="header-filter" href="#"><li class="header-span">Подбор по ингредиентам</li></a>
+            </ul>
+            <form class="navbar-form">
+                <a class="header-filter" href="#"><li class="header-span">Подбор по ингредиентам</li></a>
+                <div class="input-box">
+                    <input class="header-input" type="text" placeholder="Введите название блюда или ингредиента">
+                    <button type="submit" class="search-btn">Найти!</button>
+                </div>
+            </form>
+        </nav>
+        
+        </div>
+    </header>
+
+<main class="main">
+    <section class="top-section">
+        <div class="section-body-block">
+
+            <div class="recipes-blocks">
+                <div class="recipes-list">
+                    <ul class="b-list">
+                        
+                        <li class="b-highlight">
+                            <div class="b-inner">
+                                <a class="b-inner-a">
+                                    <img class="recipe-logo" src="../Imgs/recipe-logo.svg">
+                                    <span class="ct-title">Рецепты салатов</span>
+                                </a>
+                                <ul class="b-pop-list">
+                                    <li class="pop-list-none">
+                                        <img class="recipe-logo-pop" src="../Imgs/recipe-logo.svg">
+                                        <span class="ct-title-pop">Рецепты салатов</span>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Салаты с майонезом</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Салаты на каждый день</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="b-highlight">
+                            <div class="b-inner">
+                                <a class="b-inner-a-n" href="#">
+                                    <img class="recipe-logo-n" src="../Imgs/recipe-logo.svg">
+                                    <span class="ct-title-n">Первые блюда</span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="b-highlight">
+                            <div class="b-inner">
+                                <a class="b-inner-a">
+                                    <img class="recipe-logo recipe-logo-pop2" src="../Imgs/recipe-logo.svg">
+                                    <span class="ct-title ct-title-pop2">Веганские рецепты</span>
+                                </a>
+                                <ul class="b-pop-list">
+                                    <li class="pop-list-none">
+                                        <img class="recipe-logo-pop" src="../Imgs/recipe-logo.svg">
+                                        <span class="ct-title-pop">Веганские рецепты</span>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Салаты</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Основные блюда</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Быстрые десерты и сладости</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="b-highlight">
+                            <div class="b-inner">
+                                <a class="b-inner-a">
+                                    <img class="recipe-logo recipe-logo-pop3" src="../Imgs/recipe-logo.svg">
+                                    <span class="ct-title ct-title-pop3">Выпечка и сладости</span>
+                                </a>
+                                <ul class="b-pop-list">
+                                    <li class="pop-list-none">
+                                        <img class="recipe-logo-pop" src="../Imgs/recipe-logo.svg">
+                                        <span class="ct-title-pop">Выпечка и сладости</span>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Дрожжевая выпечка</a>
+                                        <li>
+                                            <a class="b-all-its-link" href="#">Печенье и выпечка в духовке</a>
+                                        </li>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Летние рецепты с фруктами и ягодами</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+
+                <div class="recipes-list">
+                    <ul class="b-list">
+
+                        <li class="b-highlight">
+                            <div class="b-inner">
+                                <a class="b-inner-a">
+                                    <img class="recipe-logo" src="../Imgs/recipe-logo.svg">
+                                    <span class="ct-title">Закуски</span>
+                                </a>
+                                <ul class="b-pop-list">
+                                    <li class="pop-list-none">
+                                        <img class="recipe-logo-pop" src="../Imgs/recipe-logo.svg">
+                                        <span class="ct-title-pop">Закуски</span>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Разное</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Рецепты из лаваша</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="b-highlight">
+                            <div class="b-inner">
+                                <a class="b-inner-a">
+                                    <img class="recipe-logo" src="../Imgs/recipe-logo.svg">
+                                    <span class="ct-title">Вторые блюда</span>
+                                </a>
+                                <ul class="b-pop-list">
+                                    <li class="pop-list-none">
+                                        <img class="recipe-logo-pop" src="../Imgs/recipe-logo.svg">
+                                        <span class="ct-title-pop">Вторые блюда</span>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Рецепты с мясом</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Рецепты с крупами</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Рецепты с картошкой</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="b-highlight">
+                            <div class="b-inner">
+                                <a class="b-inner-a">
+                                    <img class="recipe-logo" src="../Imgs/recipe-logo.svg">
+                                    <span class="ct-title">Здоровое питание</span>
+                                </a>
+                                <ul class="b-pop-list">
+                                    <li class="pop-list-none">
+                                        <img class="recipe-logo-pop" src="../Imgs/recipe-logo.svg">
+                                        <span class="ct-title-pop">Здоровое питание</span>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Супы</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Закуски</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Основные блюда</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Рецепты с курицей и мясом</a>
+                                    </li>
+                                    <li>
+                                        <a class="b-all-its-link" href="#">Выпечка и десерты без муки и сахара</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="b-highlight">
+                            <div class="b-inner">
+                                <a class="b-inner-a-n" href="#">
+                                    <img class="recipe-logo-n" src="../Imgs/recipe-logo.svg">
+                                    <span class="ct-title-n">Напитки</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="slider-sect__slider autoplay">
+                <div class="slider-sect__box-img">
+                    <h2 class="slider-title">Lorem ipsum dolor</h2>
+                    <p class="slider-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                </div>
+
+                <div class="slider-sect__box-img">
+                    <h2 class="slider-title">Lorem ipsum dolor</h2>
+                    <p class="slider-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                </div>
+                
+                <div class="slider-sect__box-img">
+                    <h2 class="slider-title">Lorem ipsum dolor</h2>
+                    <p class="slider-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                </div>
+                
+                <div class="slider-sect__box-img">
+                    <h2 class="slider-title">Lorem ipsum dolor</h2>
+                    <p class="slider-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="recipes-sect">
+
+        <h2 class="recipes-main-title">New Recipes</h2>
+
+        <div class="recipes-body-block">
+
+            <div class="recipe-main-block">
+                <a href="#" class="all-recipes-link">
+                    <span class="recipes-span">Все Рецепты</span>
+                </a>
+                <div class="recipe-block">
+                    <img class="recipe-img" src="../Imgs/img-test.jpg">
+                    <h2 class="recipe-title">Lorem ipsum dolor</h2>
+                    <p class="recipe-class">Мясное</p>
+                </div>
+            </div>
+
+            <div class="recipe-main-block">
+                <div class="recipe-block">
+                    <img class="recipe-img" src="../Imgs/img-test.jpg">
+                    <h2 class="recipe-title">Lorem ipsum dolor</h2>
+                    <p class="recipe-class">Мясное</p>
+                </div>
+            </div>
+
+            <div class="recipe-main-block">
+                <div class="recipe-block">
+                    <img class="recipe-img" src="../Imgs/img-test.jpg">
+                    <h2 class="recipe-title">Lorem ipsum dolor</h2>
+                    <p class="recipe-class">Мясное</p>
+                </div>
+            </div>
+
+            <div class="recipe-main-block">
+                <div class="recipe-block">
+                    <img class="recipe-img" src="../Imgs/img-test.jpg">
+                    <h2 class="recipe-title">Lorem ipsum dolor</h2>
+                    <p class="recipe-class">Мясное</p>
+                </div>
+            </div>
+
+            
+
+
+            <div class="recipe-main-block">
+                <div class="recipe-block">
+                    <img class="recipe-img" src="../Imgs/img-test.jpg">
+                    <h2 class="recipe-title">Lorem ipsum dolor</h2>
+                    <p class="recipe-class">Мясное</p>
+                </div>
+            </div>
+
+            <div class="recipe-main-block">
+                <div class="recipe-block">
+                    <img class="recipe-img" src="../Imgs/img-test.jpg">
+                    <h2 class="recipe-title">Lorem ipsum dolor</h2>
+                    <p class="recipe-class">Мясное</p>
+                </div>
+            </div>
+
+            <div class="recipe-main-block">
+                <div class="recipe-block">
+                    <img class="recipe-img" src="../Imgs/img-test.jpg">
+                    <h2 class="recipe-title">Lorem ipsum dolor</h2>
+                    <p class="recipe-class">Мясное</p>
+                </div>
+            </div>
+
+            <div class="recipe-main-block">
+                <div class="recipe-block">
+                    <img class="recipe-img" src="../Imgs/img-test.jpg">
+                    <h2 class="recipe-title">Lorem ipsum dolor</h2>
+                    <p class="recipe-class">Мясное</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+    <footer class="footer">
+        <div class="footer-body">
+            
+            <div class="footer-list-block">
+                <p class="footer-list-title">Рецепты</p>
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Рецепты салатов</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Первые блюда</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Веганские рецепты</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Выпечка и сладости</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-list-block">
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Закуски</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Вторые блюда</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Здоровое питание</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Напитки</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-list-block">
+                <p class="footer-list-title">Разделы сайта</p>
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Подборки рецептов</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Правила сайта</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contacts-block">
+                <div class="tel-number">
+                    <p class="tel-number-text">Звоните по вопросам</p>
+                    <p class="number">+380 (97) 000 08 86</p>
+                </div>
+
+                <ul class="footer-icons-list">
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </li>
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </li>
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <footer class="footer-adaptive">
+        
+        <div class="footer-body">
+            <div class="footer-list-block-main">
+            <div class="footer-list-block">
+                <p class="footer-list-title">Рецепты</p>
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Рецепты салатов</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Первые блюда</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Веганские рецепты</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Выпечка и сладости</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-list-block">
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Закуски</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Вторые блюда</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Здоровое питание</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Напитки</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-list-block">
+                <p class="footer-list-title">Разделы сайта</p>
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Подборки рецептов</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Правила сайта</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="contacts-block">
+                <div class="tel-number">
+                    <p class="tel-number-text">Звоните по вопросам</p>
+                    <p class="number">+380 (97) 000 08 86</p>
+                </div>
+
+                <ul class="footer-icons-list">
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </li>
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </li>
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+    <script src="../SiderScripts/jquery-3.6.0.min.js"></script>
+    <script src="../slick-1.8.1/slick/slick.js"></script>
+    <script src="./slider.js"></script>
+
+</body>
+</html>
