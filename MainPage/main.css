@@ -103,6 +103,11 @@
     display: flex;
     align-items: center;
 }
+.input-box-mn{
+    display: flex;
+    display: none;
+    align-items: center;
+}
 .header-input{
     display: block;
     width: 400px;
@@ -117,6 +122,22 @@
     border: 2px solid #918f8f;
     border-radius: 4px;
     margin: 0 10px 0 15px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.header-input-mn{
+    display: block;
+    width: 400px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.42857143;
+    color: #563b37;
+    background-color: #fff;
+    background-image: none;
+    border: 2px solid #918f8f;
+    border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
@@ -691,6 +712,14 @@
         display: block;
         color: #fff;
         font-size: 25px;
+        cursor: pointer;
+        transition: 0.6s;
+    }
+    .lupa-icon.active{
+        transform: rotateX('-90deg');
+    }
+    .header-input{
+        display: none;
     }
 
 
@@ -711,7 +740,7 @@
         box-shadow: 5px 0 50px 10px #000;
         border-radius: 5px;
         z-index: 3;
-        top: -550px;
+        top: -600px;
         transition: 0.6s;
     }
     .mobile-menu.active{
@@ -725,6 +754,8 @@
         margin-right: 10px;
         color: #fff;
         font-size: 25px;
+        cursor: pointer;
+        transition: 0.6s;
     }
     .mn-line{
         max-width: 300px;
@@ -786,8 +817,12 @@
         border: none;
         cursor: pointer;
     }
+    .mobile-menu__decoration{
+        margin-top: 30px;
+        user-select: 0;
+    }
     .mobile-menu-bottom{
-        margin-top: 50px;
+        margin-top: 25px;
     }
     .logo-img-mn{
         width: 80px;
@@ -826,6 +861,7 @@
 
     .logo-img{
         display: none;
+        max-width: 100px;
     }
     .main-title{
         font-size: 35px;
@@ -834,46 +870,70 @@
     .main-title_p{
         display: none;
     }
-    .header{
+    .nav-list{
         display: none;
     }
-    .logo-img{
-        max-width: 100px;
+    .header{
+        height: 0;
     }
-    .nav-list{
-        display: flex;
-        align-items: center;
+    .header-span{
+        display: none;
     }
     .sec-nav-list{
         display: flex;
         margin-top: 30px;
         align-items: center;
     }
-    .nav-link{
-        font-size: 22px;
-        margin-right: 40px;
-    }
-    .nav-link:hover{
-        color: #61aa98;
-    }
-    .nav-link:last-child{
-        margin-right: 0px;
-    }
     .header-span{
         font-size: 18px;
     }
-    .header-input{
+    .input-box-mn{
+        display: none;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        z-index: 5;
+        background: #fff;
+        border-radius: 4px;
+    }
+    .header-input-mn{
         display: block;
-        width: 400px;
-        height: 34px;
+        right: 0;
+        width: 100%;
+        height: 37px;
         padding: 6px 12px;
+    }
+    .search-btn-mn{
+        position: absolute;
+        right: 0;
+        top: 0.4px;
+        line-height: 20px;
+        border-radius: 4px;
+        background: #e85454;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        padding: 8px 10px;
+        border-radius: 4px;
     }
     .header-input:focus{
         border: 2px solid #61aa98;
     }
     .search-btn{
+        display: none;
         margin-left: 10px;
     }
+
+
+
+
+
+
+
     .section-body-block{
         flex-direction: column-reverse;
         padding: 0;
@@ -976,6 +1036,9 @@
         position: relative;
         margin-right: 0;
     }
+    .mobile-menu__decoration{
+        display: none;
+    }
     .slider-title{
         margin-top: 400px;
     }
@@ -990,6 +1053,9 @@
     }
     .slider-text{
         font-size: 18px;
+    }
+    .input-box-mn{
+        max-width: 463px;
     }
 }
 @media(max-width:406.40px){
@@ -1038,6 +1104,9 @@
      }
      .recipes-main-title{
         font-size: 60px;
+     }
+     .header-input-mn::placeholder{
+        font-size: 12px;
      }
 }
 @media(max-width:360px){

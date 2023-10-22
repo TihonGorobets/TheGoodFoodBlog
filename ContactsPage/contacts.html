@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="shortcut icon" href="./Imgs/logo.png" type="image/png">
+    <link rel="shortcut icon" href="../Imgs/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,500&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,10 +25,50 @@
             <span class="header-burgerBefore"></span>
         </div>
         <img class="logo-img" src="../Imgs/logo.png">
-        <div class="main-text-block">
+        <div class="main-text-block justify-me">
             <h1 class="main-title">The Good Food blog</h1>
             <p class="main-title_p">Найди и приготовь любой рецепт по вашему вкусу</p>
         </div>
+
+        <i class="fa-solid fa-magnifying-glass lupa-icon"></i>
+
+        <div class="mobile-menu">
+            <div class="mn-title-box">
+                <h1 class="main-title-mn">The Good Food blog</h1>
+                <i class="fa-solid fa-magnifying-glass lupa-icon-mn"></i>
+            </div>
+            <ul class="nav-list-mn">
+                <a href="../MainPage/index.html"><li class="nav-link-mn">Рецепты</li></a>
+                <li class="nav-link-mn">Подборки Рецептов</li>
+                <a href="../ContactsPage/contacts.html" class="nav-link-mn__td"><li class="nav-link-mn">Контакты</li></a>
+                <a class="header-filter-mn" href="#"><li class="header-span-mn">Подбор по ингредиентам</li></a>
+            </ul>
+
+            <div class="mobile-menu__decoration"><img class="mn-line" src="../Imgs/line-mn.png"></div>
+
+            <div class="mobile-menu-bottom">
+                <img class="logo-img-mn" src="../Imgs/logo.png">
+                <h2 class="mobile-menu-services">Социальные Сети:</h2>
+                <ul class="icons-list-mn">
+                    <li class="list-icon-mn">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </li>
+                    <li class="list-icon-mn">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </li>
+                    <li class="list-icon-mn">
+                        <i class="fa-brands fa-square-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="input-box-mn">
+        <input class="header-input-mn" type="text" placeholder="Название блюда или ингредиента">
+        <button type="submit" class="search-btn-mn">Найти!</button>
     </div>
 
     <header class="header">
@@ -38,7 +78,7 @@
             <ul class="nav-list">
                 <a href="../MainPage/index.html"><li class="nav-link">Рецепты</li></a>
                 <li class="nav-link">Подборки Рецептов</li>
-                <a href="contacts.html"><li class="nav-link">Контакты</li></a>
+                <a href="../ContactsPage/contacts.html"><li class="nav-link">Контакты</li></a>
                 <a class="header-filter" href="#"><li class="header-span">Подбор по ингредиентам</li></a>
             </ul>
             <form class="navbar-form">
@@ -59,10 +99,44 @@
 
     <section class="contacts-sect">
         <div class="contacts-main-block">
+            <img class="bg-food" src="../Imgs/salad-bg.png">
             <div class="left-cont-block">
-                <h1 class="cont-block-title">Свяжитесь с нами</h1>
-                <img class="cont-img" src="../Imgs/cont-logo.png">
-            </div> 
+                <img class="cont-img" src="../Imgs/cont-main-logo.png">
+            </div>
+
+            <div class="contacts-right-block">
+                <h2 class="contacts-title">Контакты</h2>
+
+                <h2 class="subblock-admin">
+                    Администратор The Good Food Blog ["Имя"]
+                </h2>
+
+                <div class="cont-subblocks">
+                    <div class="cont-subblock">
+                        <h2 class="subblock-title">
+                            Телефоны:
+                        </h2>
+                        <p class="subblock-text">
+                            +380 (97) 000 08 86 - основной номер
+                        </p>
+                        <p class="subblock-text">
+                            +380 (97) 000 08 85 - для жалоб и предложений
+                        </p>
+
+                    <div class="cont-subblock">
+                        <h2 class="subblock-title">
+                            E-mail для связи:
+                        </h2>
+                        <p class="subblock-text">
+                            emailexample@gmail.com
+                        </p>
+                        <p class="subblock-text">
+                            emailexample@gmail.com
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section> 
 
@@ -224,5 +298,8 @@
 
         </div>
     </footer>
+
+    <script src="../JsCode/HeaderBurger.js"></script>
+    <script src="../JsCode/SearchPop.js"></script>
 </body>
 </html>
