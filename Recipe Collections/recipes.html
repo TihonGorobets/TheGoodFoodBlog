@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="../Imgs/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,500&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,500&family=Dancing+Script:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recipes.css">
+
+    <title>Подборки Рецептов</title>
+</head>
+
+<body>
+    <div class="main-title_box">
+        <div class="open">
+            <span class="header-burgerAfter"></span>
+            <span class="header-burger"></span>
+            <span class="header-burgerBefore"></span>
+        </div>
+        <img class="logo-img" src="../Imgs/logo.png">
+        <div class="main-text-block justify-me">
+            <h1 class="main-title">The Good Food blog</h1>
+            <p class="main-title_p">Найди и приготовь любой рецепт по вашему вкусу</p>
+        </div>
+
+        <i class="fa-solid fa-magnifying-glass lupa-icon"></i>
+
+        <div class="mobile-menu">
+            <div class="mn-title-box">
+                <h1 class="main-title-mn">The Good Food blog</h1>
+                <i class="fa-solid fa-magnifying-glass lupa-icon-mn"></i>
+            </div>
+            <ul class="nav-list-mn">
+                <a href="../MainPage/index.html"><li class="nav-link-mn">Рецепты</li></a>
+                <a href="../Recipe Collections/recipes.html"><li class="nav-link-mn">Подборки Рецептов</li></a>
+                <a href="../ContactsPage/contacts.html" class="nav-link-mn__td"><li class="nav-link-mn">Контакты</li></a>
+                <a class="header-filter-mn" href="#"><li class="header-span-mn">Подбор по ингредиентам</li></a>
+            </ul>
+
+            <div class="mobile-menu__decoration"><img class="mn-line" src="../Imgs/line-mn.png"></div>
+
+            <div class="mobile-menu-bottom">
+                <img class="logo-img-mn" src="../Imgs/logo.png">
+                <h2 class="mobile-menu-services">Социальные Сети:</h2>
+                <ul class="icons-list-mn">
+                    <li class="list-icon-mn">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </li>
+                    <li class="list-icon-mn">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </li>
+                    <li class="list-icon-mn">
+                        <i class="fa-brands fa-square-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="input-box-mn">
+        <input class="header-input-mn" type="text" placeholder="Название блюда или ингредиента">
+        <button type="submit" class="search-btn-mn">Найти!</button>
+    </div>
+
+    <header class="header">
+        <div class="header-body">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <a href="../MainPage/index.html"><li class="nav-link">Рецепты</li></a>
+                <a href="../Recipe Collections/recipes.html"><li class="nav-link">Подборки Рецептов</li></a>
+                <a href="../ContactsPage/contacts.html"><li class="nav-link">Контакты</li></a>
+                <a class="header-filter" href="#"><li class="header-span">Подбор по ингредиентам</li></a>
+            </ul>
+            <form class="navbar-form">
+                <a class="header-filter" href="#"><li class="header-span">Подбор по ингредиентам</li></a>
+                <div class="input-box">
+                    <input class="header-input" type="text" placeholder="Введите название блюда или ингредиента">
+                    <button type="submit" class="search-btn">Найти!</button>
+                </div>
+            </form>
+        </nav>
+        
+        </div>
+    </header>
+
+
+
+
+
+    <main class="main">
+        <div class="main-body">
+
+             <h1 class="recipes-title">Подборки Лучших Рецептов</h1>
+                <h2 class="recipes-subtitle">Ваши кулинарные фантазии воплощаются в жизнь</h2>
+                <img class="main-underline" src="../Imgs/main-underline.png">
+                
+                <section class="recipes-section">
+        
+                    <h2 class="recipes-sect-title">Рецепты салатов</h2>
+                    
+                    <div class="recipe-block">
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Салаты с майонезом</p>
+                        </div>
+        
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Салаты на каждый день</p>
+                        </div>
+                    </div>
+        
+                    <img class="main-underline" src="../Imgs/main-underline.png">
+        
+                </section>
+                
+                <section class="recipes-section">
+        
+                    <h2 class="recipes-sect-title">Первые блюда</h2>
+                    
+                    <div class="recipe-block">
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Первые блюда</p>
+                        </div>
+                    </div>
+        
+                    <img class="main-underline" src="../Imgs/main-underline.png">
+        
+                </section>
+
+                <section class="recipes-section">
+        
+                    <h2 class="recipes-sect-title">Веганские рецепты</h2>
+                    
+                    <div class="recipe-block">
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Салаты</p>
+                        </div>
+                    
+
+                    <div class="recipe-box">
+                        <div class="recipe-box-img">
+                            <div class="recipe-box-hover">
+                                <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                <p class="recipe-hover-info">1 рецепт</p>
+                            </div>
+                        </div>
+                        <p class="recipe-box-info">Основные блюда</p>
+                    </div>
+
+                    <div class="recipe-box">
+                        <div class="recipe-box-img">
+                            <div class="recipe-box-hover">
+                                <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                <p class="recipe-hover-info">1 рецепт</p>
+                            </div>
+                        </div>
+                        <p class="recipe-box-info">Быстрые десерты и сладости</p>
+                    </div>
+                </div>
+        
+                    <img class="main-underline" src="../Imgs/main-underline.png">
+        
+                </section>
+
+                <section class="recipes-section">
+        
+                    <h2 class="recipes-sect-title">Выпечка и сладости</h2>
+                    
+                    <div class="recipe-block">
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Дрожжевая выпечка</p>
+                        </div>
+
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Печенье и выпечка в духовке</p>
+                        </div>
+
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Летние рецепты с фруктами и ягодами</p>
+                        </div>
+                    </div>
+        
+                    <img class="main-underline" src="../Imgs/main-underline.png">
+        
+                </section>
+
+                <section class="recipes-section">
+        
+                    <h2 class="recipes-sect-title">Закуски</h2>
+                    
+                    <div class="recipe-block">
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Разное</p>
+                        </div>
+
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Рецепты из лаваша</p>
+                        </div>
+                    </div>
+        
+                    <img class="main-underline" src="../Imgs/main-underline.png">
+        
+                </section>
+
+                <section class="recipes-section">
+        
+                    <h2 class="recipes-sect-title">Вторые блюда</h2>
+                    
+                    <div class="recipe-block">
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Рецепты с мясом</p>
+                        </div>
+
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Рецепты с крупами</p>
+                        </div>
+
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Рецепты с картошкой</p>
+                        </div>
+                    </div>
+        
+                    <img class="main-underline" src="../Imgs/main-underline.png">
+        
+                </section>
+
+                <section class="recipes-section">
+        
+                    <h2 class="recipes-sect-title">Здоровое питание</h2>
+                    
+                    <div class="recipe-block">
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Супы</p>
+                        </div>
+
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Закуски</p>
+                        </div>
+
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Основные блюда</p>
+                        </div>
+
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Рецепты с курицей и мясом</p>
+                        </div>
+
+                        <div class="recipe-box">
+                            <div class="recipe-box-img">
+                                <div class="recipe-box-hover">
+                                    <svg class="recipe-hover-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                                    <p class="recipe-hover-info">1 рецепт</p>
+                                </div>
+                            </div>
+                            <p class="recipe-box-info">Выпечка и десерты без муки и сахара</p>
+                        </div>
+                    </div>
+        
+                </section>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-body">
+            
+            <div class="footer-list-block">
+                <p class="footer-list-title">Рецепты</p>
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Рецепты салатов</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Первые блюда</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Веганские рецепты</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Выпечка и сладости</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-list-block">
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Закуски</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Вторые блюда</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Здоровое питание</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Напитки</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-list-block">
+                <p class="footer-list-title">Разделы сайта</p>
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Подборки рецептов</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Правила сайта</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contacts-block">
+                <div class="tel-number">
+                    <p class="tel-number-text">Звоните по вопросам</p>
+                    <p class="number">+380 (97) 000 08 86</p>
+                </div>
+
+                <ul class="footer-icons-list">
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </li>
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </li>
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <footer class="footer-adaptive">
+        
+        <div class="footer-body">
+            <div class="footer-list-block-main">
+            <div class="footer-list-block">
+                <p class="footer-list-title">Рецепты</p>
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Рецепты салатов</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Первые блюда</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Веганские рецепты</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Выпечка и сладости</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-list-block">
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Закуски</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Вторые блюда</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Здоровое питание</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Напитки</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-list-block">
+                <p class="footer-list-title">Разделы сайта</p>
+                <ul class="footer-list-body">
+                    <li class="footer-list">
+                        <a href="#">Подборки рецептов</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">Правила сайта</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="contacts-block">
+                <div class="tel-number">
+                    <p class="tel-number-text">Звоните по вопросам</p>
+                    <p class="number">+380 (97) 000 08 86</p>
+                </div>
+
+                <ul class="footer-icons-list">
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </li>
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </li>
+                    <li class="list-icon">
+                        <i class="fa-brands fa-square-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../JsCode/HeaderBurger.js"></script>
+    <script src="../JsCode/SearchPop.js"></script>
+</body>
+</html>
